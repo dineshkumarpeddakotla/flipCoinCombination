@@ -1,10 +1,12 @@
 #!/bin/bash
-flip=$(( RANDOM%2 ))
-if [ $flip -eq 0 ]
+random(){
+if [ $(( RANDOM%2 )) -eq 0 ]
 then
-head
+echo H
 else
-tail
+echo T
 fi
+}
+
 
 
